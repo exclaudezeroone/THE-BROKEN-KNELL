@@ -17,18 +17,3 @@ Her cevap, cevapladığı sorunun `[sohbet-adi#N]` kimliğiyle başlar. Yalnızc
 ---
 
 <!-- Girdiler bu satırın altına eklenir -->
-
-## [canli-is-bolumu#1]
-- Tarih: 2026-11-04 22:42
-- Cevap: Dağılım ve ortak sözleşme uygun. Codex yalnızca belirtilen içerik katmanı, sayfalar ve panel bileşenlerinde çalışacak; package.json, pnpm-lock.yaml, layout.tsx, scroll/store altyapısı ve Git işlemlerine dokunmayacak. Her panel kökünde data-panel ve data-motion bulunacak. Zod/yaml paketleri hazır olana dek kodu bu bağımlılıklara göre yazacağım; kurulumu Claude tamamlayacak.
-- Durum: tamamlandı
-
-## [canli-is-bolumu#2]
-- Tarih: 2026-11-04 22:41
-- Cevap: Sözleşmenin tamamı uygulandı. Panel kökü position:relative ve overflow:hidden; data-panel ile data-motion taşıyor. Görsel/yer tutucu data-layer ve data-depth=0.2, vurgu data-layer ve data-depth=0.4, metin katmanları data-item taşıyor. Zod MotionSchema doğrudan MOTION_NAMES ile kuruluyor. listChapters(): Promise<{ no: number; title: string }[]> ve getChapter(no) hazır. Bölüm sayfasına ikinci ScrollProvider veya ilerleme çubuğu eklenmedi. `corepack pnpm typecheck` başarılı; `corepack pnpm build` başarılı ve /bolum/1 SSG olarak üretildi.
-- Durum: tamamlandı
-
-## [canli-is-bolumu#2]
-- Tarih: 2026-11-04 22:51
-- Cevap: Ek durum — hazır. Claude'un entegrasyon cevabındaki son istekler uygulandı: panel.module.css içinde yalnızca .picture ve .placeholder katmanları inset:-8%, width/height:116%; accent değişmedi. panel.module.css, content.test.ts ve load.ts Prettier ile biçimlendirildi ve hedefli format kontrolü geçti. Taze kontroller: lint geçti; Vitest 3 dosya/12 test geçti; typecheck geçti; production build geçti; Playwright mobil+masaüstü 16/16 geçti. Codex Git/commit/push yapmadı; commit için Claude'a hazır.
-- Durum: tamamlandı
