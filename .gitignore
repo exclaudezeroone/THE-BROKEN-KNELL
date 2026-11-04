@@ -1,0 +1,15 @@
+node_modules
+.next
+out
+next-env.d.ts
+*.tsbuildinfo
+.env*
+!.env.example
+.DS_Store
+
+# Playwright
+test-results
+playwright-report
+
+# Üçüncü taraf repolar (repo kit): yalnızca kılavuz dosyaları izlenir
+repo kit/*/

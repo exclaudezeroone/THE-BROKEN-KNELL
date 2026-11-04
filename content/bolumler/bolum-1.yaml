@@ -1,0 +1,78 @@
+no: 1
+title: Çanın İlk Yankısı
+excerpt: Sessizliğin içinde duyulan tek bir çan, dönüşü olmayan eşiği açar.
+panels:
+  - id: sessizlik
+    alt: Nokta tonlu soluk bir boşlukta uzakta duran yalnız bir siluet
+    ratio:
+      mobile: 9 / 14
+      desktop: 16 / 8
+    motion: fade-up
+    placeholder: paper
+    layers:
+      - id: ilk-anlatim
+        kind: caption
+        text: O gece, şehir ilk kez gerçekten sustu.
+        placement: bottom-left
+
+  - id: ilk-yanki
+    alt: Karanlığı yaran dairesel hız çizgileri ve küçük kırmızı bir odak
+    ratio:
+      mobile: 9 / 22
+      desktop: 16 / 12
+    motion: onomatope
+    placeholder: ink
+    accent:
+      shape: dot
+      color: blood
+    layers:
+      - id: can-sesi
+        kind: onomatopoeia
+        text: GONNG
+        placement: center
+
+  - id: esik
+    alt: Sert çapraz taramaların arasından açılan altın renkli ince bir yarık
+    ratio:
+      mobile: 9 / 10
+      desktop: 16 / 6
+    motion: zoom
+    placeholder: hatch
+    accent:
+      shape: slash
+      color: gold
+    layers:
+      - id: soru
+        kind: speech
+        speaker: Bilinmeyen ses
+        text: Beni duyabiliyor musun?
+        placement: top-right
+
+  - id: dusus
+    alt: Derinliğe uzanan siyah ve gri katmanlar arasında aşağı düşen siluet
+    ratio:
+      mobile: 9 / 30
+      desktop: 16 / 14
+    motion: parallax
+    placeholder: ink
+    accent:
+      shape: bar
+      color: green
+    layers:
+      - id: dusus-anlatim
+        kind: caption
+        text: Sonra zemin de, gökyüzü de adını unuttu.
+        placement: top-left
+
+  - id: uyanis
+    alt: Koyu mürekkep lekeleri arasında yeni bir ufka bakan siluet
+    ratio:
+      mobile: 9 / 12
+      desktop: 16 / 7
+    motion: darken
+    placeholder: paper
+    layers:
+      - id: son-anlatim
+        kind: caption
+        text: Uyandığında çan hâlâ çalıyordu.
+        placement: bottom-right

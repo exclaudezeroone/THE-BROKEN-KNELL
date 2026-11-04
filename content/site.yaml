@@ -1,0 +1,11 @@
+title: The Broken Knell
+tagline: Kırık bir çanın sesi, başka bir dünyada unutulmuş bir yemini uyandırır.
+about:
+  - The Broken Knell; isekai, drama ve macera türlerini dikey, hareketli manga anlatımıyla bir araya getiren özgün bir Türkçe hikâyedir.
+  - Çizimler hazırlanırken bu sürüm, nihai panellerle aynı oranı koruyan yer tutucularla okuma ritmini ve kaydırmaya bağlı hareketleri geliştirir.
+firstChapter: 1
+chapters:
+  - no: 1
+    title: Çanın İlk Yankısı
+    excerpt: Sessizliğin içinde duyulan tek bir çan, dönüşü olmayan eşiği açar.
+    published: true

@@ -1,0 +1,42 @@
+.chapter {
+  min-height: 100svh;
+  background: var(--ui-ink);
+}
+
+.header {
+  display: grid;
+  min-height: 72svh;
+  align-content: end;
+  padding: calc(var(--nav-h) + 4rem) 1.25rem 3rem;
+}
+
+.header p {
+  margin: 0 0 0.75rem;
+  color: var(--art-gold);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.header h1 {
+  max-width: 12ch;
+  margin: 0;
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: clamp(3.5rem, 14vw, 9rem);
+  font-weight: 600;
+  line-height: 0.9;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+
+.header span {
+  max-width: 36rem;
+  margin-top: 1.5rem;
+  color: var(--ui-text-dim);
+}
+
+@media (min-width: 48rem) {
+  .header {
+    padding-inline: 2.5rem;
+  }
+}

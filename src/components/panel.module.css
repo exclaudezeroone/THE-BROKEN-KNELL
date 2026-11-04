@@ -1,0 +1,186 @@
+.strip {
+  display: block;
+  background: var(--ui-ink);
+}
+
+.panel {
+  position: relative;
+  width: 100%;
+  aspect-ratio: var(--panel-ratio-mobile);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.picture,
+.placeholder {
+  position: absolute;
+  inset: -3%;
+  display: block;
+  width: 106%;
+  height: 106%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.paper {
+  color: var(--art-grey-400);
+  background: var(--ui-text);
+}
+
+.paper .placeholder {
+  background-image:
+    radial-gradient(rgb(12 11 10 / 0.28) 1px, transparent 1.4px),
+    linear-gradient(to top, rgb(12 11 10 / 0.35), transparent 60%);
+  background-size: 7px 7px, 100% 100%;
+}
+
+.ink {
+  color: var(--ui-text);
+  background: var(--ui-ink);
+}
+
+.ink .placeholder {
+  background: repeating-conic-gradient(
+    from 0deg at 50% 50%,
+    rgb(241 237 228 / 0.45) 0deg 0.6deg,
+    transparent 0.6deg 4deg
+  );
+  mask-image: radial-gradient(circle at 50% 50%, transparent 14%, #000 62%);
+}
+
+.hatch {
+  color: var(--ui-text);
+  background: var(--art-grey-200);
+}
+
+.hatch .placeholder {
+  background-image:
+    repeating-linear-gradient(
+      -45deg,
+      rgb(12 11 10 / 0.45) 0 1px,
+      transparent 1px 6px
+    ),
+    linear-gradient(to top, rgb(12 11 10 / 0.6), transparent 70%);
+}
+
+.accent {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  background: currentcolor;
+}
+
+.slash {
+  top: 36%;
+  left: 14%;
+  width: 46%;
+  height: 0.4rem;
+  transform: rotate(-24deg);
+}
+
+.dot {
+  top: 30%;
+  right: 16%;
+  width: clamp(2.5rem, 12vw, 5rem);
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.bar {
+  top: 24%;
+  left: 22%;
+  width: 0.4rem;
+  height: 28%;
+}
+
+.blood {
+  color: var(--art-blood);
+}
+
+.gold {
+  color: var(--art-gold);
+}
+
+.green {
+  color: var(--art-green);
+}
+
+.layer {
+  position: absolute;
+  z-index: 2;
+  max-width: min(78%, 28rem);
+  margin: 0;
+}
+
+.caption,
+.speech {
+  padding: 0.75rem 0.9rem;
+  color: var(--ui-text);
+  background: rgb(12 11 10 / 0.82);
+  font-size: clamp(0.9rem, 2.4vw, 1.15rem);
+}
+
+.speech {
+  border: 1px solid var(--ui-line);
+  border-radius: 50%;
+  text-align: center;
+}
+
+.onomatopoeia {
+  color: var(--ui-text);
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: clamp(2.8rem, 16vw, 9rem);
+  font-weight: 600;
+  line-height: 0.8;
+  letter-spacing: -0.05em;
+  text-shadow: 0.08em 0.08em 0 var(--ui-ink);
+}
+
+.speaker {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--ui-text-dim);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.top-left {
+  top: 14%;
+  left: 7%;
+}
+
+.top-right {
+  top: 14%;
+  right: 7%;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-left {
+  bottom: 10%;
+  left: 7%;
+}
+
+.bottom-right {
+  right: 7%;
+  bottom: 10%;
+}
+
+@media (min-width: 48rem) {
+  .panel {
+    aspect-ratio: var(--panel-ratio-desktop);
+  }
+}

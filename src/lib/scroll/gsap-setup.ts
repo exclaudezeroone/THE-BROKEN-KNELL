@@ -1,0 +1,14 @@
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+let registered = false;
+
+/** Eklentileri bir kez kaydeder. Yalnızca istemcide çağrılır. */
+export function registerGsap(): void {
+  if (registered || typeof window === "undefined") return;
+  gsap.registerPlugin(ScrollTrigger, useGSAP);
+  registered = true;
+}
+
+export { gsap, ScrollTrigger };

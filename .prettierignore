@@ -1,0 +1,10 @@
+.next
+out
+node_modules
+repo kit
+agent chat
+test-results
+pnpm-lock.yaml
+CLAUDE.md
+AGENTS.md
+tsconfig.json
