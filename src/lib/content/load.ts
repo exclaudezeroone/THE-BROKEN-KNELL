@@ -2,12 +2,7 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { parse } from "yaml";
 import type { ZodIssue, ZodType } from "zod";
-import {
-  ChapterSchema,
-  SiteContentSchema,
-  type Chapter,
-  type SiteContent,
-} from "./schema";
+import { ChapterSchema, SiteContentSchema, type Chapter, type SiteContent } from "./schema";
 
 const CONTENT_ROOT = path.join(process.cwd(), "content");
 

@@ -14,10 +14,10 @@
 .picture,
 .placeholder {
   position: absolute;
-  inset: -3%;
+  inset: -8%;
   display: block;
-  width: 106%;
-  height: 106%;
+  width: 116%;
+  height: 116%;
 }
 
 .image {
@@ -39,7 +39,9 @@
   background-image:
     radial-gradient(rgb(12 11 10 / 0.28) 1px, transparent 1.4px),
     linear-gradient(to top, rgb(12 11 10 / 0.35), transparent 60%);
-  background-size: 7px 7px, 100% 100%;
+  background-size:
+    7px 7px,
+    100% 100%;
 }
 
 .ink {
@@ -63,11 +65,7 @@
 
 .hatch .placeholder {
   background-image:
-    repeating-linear-gradient(
-      -45deg,
-      rgb(12 11 10 / 0.45) 0 1px,
-      transparent 1px 6px
-    ),
+    repeating-linear-gradient(-45deg, rgb(12 11 10 / 0.45) 0 1px, transparent 1px 6px),
     linear-gradient(to top, rgb(12 11 10 / 0.6), transparent 70%);
 }
 

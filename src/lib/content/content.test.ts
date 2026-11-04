@@ -16,9 +16,7 @@ const VALID_PANEL = {
 
 describe("YAML content loader", () => {
   it("lists only published chapters with navigation fields", async () => {
-    await expect(listChapters()).resolves.toEqual([
-      { no: 1, title: "Çanın İlk Yankısı" },
-    ]);
+    await expect(listChapters()).resolves.toEqual([{ no: 1, title: "Çanın İlk Yankısı" }]);
   });
 
   it("loads and validates the first chapter", async () => {
